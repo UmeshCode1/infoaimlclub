@@ -1,22 +1,21 @@
 export const metadata = {
-  title: "Appwrite + Next.js",
-  description: "Appwrite starter for Next.js",
+  title: "info.aimlclub.tech | Governance Platform",
+  description: "Official digital information & governance platform of AI & Machine Learning Club – Oriental College of Technology",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/appwrite.svg" />
+        <link rel="icon" href="/aiml_club_logo.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@300;400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" type="image/svg+xml" href="/appwrite.svg" />
       </head>
-      <body className={"bg-[#FAFAFB] font-[Inter] text-sm text-[#56565C]"}>
+      <body className="bg-[#050505] font-sans text-stone-300 selection:bg-pink-500/30 selection:text-pink-200 antialiased">
         {children}
       </body>
     </html>

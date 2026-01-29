@@ -1,20 +1,66 @@
 @import "tailwindcss";
 
-summary::-webkit-details-marker {
-  display: none
+:root {
+  --bg-primary: #050505;
+  --bg-secondary: #0a0a0a;
+  --bg-accent: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --accent: #fd366e;
+  --border: #1a1a1a;
+  --glass: rgba(255, 255, 255, 0.03);
 }
 
-.checker-background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(#e6e6e690 1px, transparent 1px),
-    linear-gradient(90deg, #e6e6e690 1px, transparent 1px);
-  background-size: 3.7em 3.7em;
-  mask-image: radial-gradient(ellipse at 50% 40%, black 0%, transparent 55%);
-  z-index: -1;
-  background-position-x: center;
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  overflow-x: hidden;
+}
+
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(253, 54, 110, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(253, 54, 110, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at center, black 0%, transparent 80%);
+}
+
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--accent);
+  background: rgba(253, 54, 110, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #fff, #9ca3af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.accent-shadow {
+  box-shadow: 0 0 30px rgba(253, 54, 110, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
 }
