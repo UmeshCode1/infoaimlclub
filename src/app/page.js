@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import "./app.css";
 
+export const dynamic = 'force-dynamic';
+
 const ICON_MAP = {
   instagram: Instagram,
   linkedin: Linkedin,

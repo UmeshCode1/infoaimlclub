@@ -7,11 +7,4 @@ const client = new Client()
 const account = new Account(client);
 const databases = new Databases(client);
 
-// Ping the Appwrite backend server to verify the setup
-client.ping().then(() => {
-    console.log("Appwrite connection verified (Ping successful)");
-}).catch((error) => {
-    console.error("Appwrite connection failed:", error);
-});
-
 export { client, account, databases };
