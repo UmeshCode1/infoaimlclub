@@ -14,8 +14,8 @@ const createAdminClient = () => {
 };
 
 export async function getLinks() {
-    const { databases } = createAdminClient();
     try {
+        const { databases } = createAdminClient();
         const response = await databases.listDocuments(
             "main",
             "community_links",
@@ -29,8 +29,8 @@ export async function getLinks() {
 }
 
 export async function getAnnouncements() {
-    const { databases } = createAdminClient();
     try {
+        const { databases } = createAdminClient();
         const response = await databases.listDocuments(
             "main",
             "announcements",
