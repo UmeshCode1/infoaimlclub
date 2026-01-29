@@ -1,0 +1,432 @@
+[
+  {
+    "name": "Prof. Shamaila Khan",
+    "enrollment_no": null,
+    "role": "Faculty Coordinator",
+    "team": "AIML_FACULTY",
+    "email": "shamailakhan@oriental.ac.in",
+    "contact": null,
+    "type": "faculty",
+    "active": true
+  },
+  {
+    "name": "Vishal Kumar",
+    "enrollment_no": "0126AL231142",
+    "role": "President",
+    "team": "AIML_CORE",
+    "email": "vg8904937@gmail.com",
+    "contact": "6299200082",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Umesh Patel",
+    "enrollment_no": "0126AL231140",
+    "role": "Vice President",
+    "team": "AIML_CORE",
+    "email": "umesh.code1@gmail.com",
+    "contact": "7974389476",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Gourav Jain",
+    "enrollment_no": "0126AL231055",
+    "role": "Event Head",
+    "team": "AIML_EVENTS",
+    "email": "gjain9279@gmail.com",
+    "contact": "8878094508",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Aarchi Sharma",
+    "enrollment_no": "0126AL231001",
+    "role": "Event Head",
+    "team": "AIML_EVENTS",
+    "email": "aarchisharma320@gmail.com",
+    "contact": "6266091145",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Parul Ajit",
+    "enrollment_no": "0126AL231092",
+    "role": "Event Head",
+    "team": "AIML_EVENTS",
+    "email": "parulajit907@gmail.com",
+    "contact": "8602691174",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Anjali Sonare",
+    "enrollment_no": "0126AL241015",
+    "role": "Event Coordinator",
+    "team": "AIML_EVENTS",
+    "email": "anjailsonare780@gmail.com",
+    "contact": "9201724696",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Aanya Tomar",
+    "enrollment_no": "0126AL241023",
+    "role": "Event Coordinator",
+    "team": "AIML_EVENTS",
+    "email": "tomaraanya671@gmail.com",
+    "contact": "9770342084",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Bhavesh Singh",
+    "enrollment_no": "0126AL231048",
+    "role": "Event Coordinator",
+    "team": "AIML_EVENTS",
+    "email": "bhaveshsinpanwar15@gamil.com",
+    "contact": "9516686603",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Tanu Jadon",
+    "enrollment_no": "0126AL241132",
+    "role": "Event Coordinator",
+    "team": "AIML_EVENTS",
+    "email": "tanu05624@gmail.com",
+    "contact": "6264052784",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Sarvesh Sejwar",
+    "enrollment_no": "0126AL253D18",
+    "role": "Event Coordinator",
+    "team": "AIML_EVENTS",
+    "email": "sarveshsejwar441@gmail.com",
+    "contact": "9329441246",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Nasir Khan",
+    "enrollment_no": "0126AL241068",
+    "role": "Event Coordinator",
+    "team": "AIML_EVENTS",
+    "email": "mdnasir078667@gmail.com",
+    "contact": "7898009433",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Rinki pathak",
+    "enrollment_no": "0126AL241096",
+    "role": "Event Coordinator",
+    "team": "AIML_EVENTS",
+    "email": "rinkipathak255@gmail.com",
+    "contact": "9644179155",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Prince Kumar",
+    "enrollment_no": "0126AL231101",
+    "role": "Discipline Head",
+    "team": "AIML_DISCIPLINE",
+    "email": "princekumar2012010@gmail.com",
+    "contact": "9470280758",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Nikhil Singh",
+    "enrollment_no": "0126AL231088",
+    "role": "Discipline Coordinator",
+    "team": "AIML_DISCIPLINE",
+    "email": "nikhilssingh22@gmail.com",
+    "contact": "92443 87773",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Himanshu Gour",
+    "enrollment_no": "0126AL231062",
+    "role": "Discipline Coordinator",
+    "team": "AIML_DISCIPLINE",
+    "email": "himanshugour7@gmail.com",
+    "contact": "96692 89659",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Sarthak Shrivastava",
+    "enrollment_no": "0126AL231120",
+    "role": "Discipline Coordinator",
+    "team": "AIML_DISCIPLINE",
+    "email": "shrivastavasarthak2006@gmail.com",
+    "contact": "92853 30586",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Kinshuk Verma",
+    "enrollment_no": "0126AL231076",
+    "role": "Tech Head",
+    "team": "AIML_TECH",
+    "email": "ver.kinshuk111@gmail.com",
+    "contact": "9094359829",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Nimisha Kumari",
+    "enrollment_no": "0126AL231089",
+    "role": "Tech Coordinator",
+    "team": "AIML_TECH",
+    "email": "nimishakum511@gmail.com",
+    "contact": "8982849203",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Arnav Singh",
+    "enrollment_no": "0126AL241026",
+    "role": "Tech Coordinator",
+    "team": "AIML_TECH",
+    "email": "sigh67arnav@gmail.com",
+    "contact": "8234099782",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Himanshu Singh",
+    "enrollment_no": "0126AL241048",
+    "role": "Tech Coordinator",
+    "team": "AIML_TECH",
+    "email": "singhhimmanshu9893@gmail.com",
+    "contact": "8815218904",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Jitesh",
+    "enrollment_no": "0126AL241051",
+    "role": "Tech Coordinator",
+    "team": "AIML_TECH",
+    "email": "jiteshverma139@gmail.com",
+    "contact": "8817683880",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Heer Murjani",
+    "enrollment_no": "0126AL231061",
+    "role": "Head Anchor",
+    "team": "AIML_ANCHORS",
+    "email": "heermurjani2004@gmail.com",
+    "contact": "8966061631",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Anshul Sharma",
+    "enrollment_no": "0126AL231025",
+    "role": "Head Anchor",
+    "team": "AIML_ANCHORS",
+    "email": "anshulsharma008a@gmail.com",
+    "contact": "6263941427",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Ayush Tamrakar",
+    "enrollment_no": "0126AL231045",
+    "role": "Anchor",
+    "team": "AIML_ANCHORS",
+    "email": "tamrakarsudha272@gmail.com",
+    "contact": "8871917308",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Avni Rawat",
+    "enrollment_no": "0126AL241032",
+    "role": "Anchor",
+    "team": "AIML_ANCHORS",
+    "email": "avnir361@gmail.com",
+    "contact": "8450896733",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Ankit Sharma",
+    "enrollment_no": "0126AL241016",
+    "role": "Anchor",
+    "team": "AIML_ANCHORS",
+    "email": "ankitsharma60784@gmail.com",
+    "contact": "7724904911",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Apurvi Aggarwal",
+    "enrollment_no": "0126AL241024",
+    "role": "Anchor",
+    "team": "AIML_ANCHORS",
+    "email": "agrawalapurvi96@gmail.com",
+    "contact": "7389176728",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Shambhavi",
+    "enrollment_no": "0126AL241111",
+    "role": "Anchor",
+    "team": "AIML_ANCHORS",
+    "email": "shambhavim57@gmail.com",
+    "contact": "9993418752",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Manish Mehra",
+    "enrollment_no": "0126AL241059",
+    "role": "Anchor",
+    "team": "AIML_ANCHORS",
+    "email": "manishmehra8966@gmail.com",
+    "contact": "8966070097",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Prakhar Sahu",
+    "enrollment_no": "0126AL231098",
+    "role": "Public Relations",
+    "team": "AIML_MEDIA",
+    "email": "prakharsahu150@gmail.com",
+    "contact": "9584060146",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Khushi Kumari",
+    "enrollment_no": "0126Al231075",
+    "role": "Media Head",
+    "team": "AIML_MEDIA",
+    "email": "khushikumari89934@gmail.com",
+    "contact": "8789498277",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Anushka Malviya",
+    "enrollment_no": "0126AL241021",
+    "role": "Media Associate",
+    "team": "AIML_MEDIA",
+    "email": "anushkamalviya93@gmail.com",
+    "contact": "9752099722",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Aashu Kumar",
+    "enrollment_no": "0126AL241001",
+    "role": "Media Associate",
+    "team": "AIML_MEDIA",
+    "email": "kaviraj07310731@gmail.com",
+    "contact": "8102823110",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Daksh Sahni",
+    "enrollment_no": "0126AL241036",
+    "role": "Graphics Designer",
+    "team": "AIML_MEDIA",
+    "email": "dakshsahni2006@gmail.com",
+    "contact": "9696532552",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Pritish Mandal",
+    "enrollment_no": "0126AL231102",
+    "role": "Graphics Designer",
+    "team": "AIML_MEDIA",
+    "email": "pritishkumar28@gmail.com",
+    "contact": "7067963041",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Abhijeet Sarkar",
+    "enrollment_no": "0126AL231004",
+    "role": "Graphics Designer",
+    "team": "AIML_MEDIA",
+    "email": "abhiztsarkar@gmail.com",
+    "contact": "9111900236",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Hana Nafees Abbasi",
+    "enrollment_no": "0126AL241043",
+    "role": "Graphics Designer",
+    "team": "AIML_MEDIA",
+    "email": "hananafees16@gmail.com",
+    "contact": "7909796744",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Mohammed Arif Zaidi",
+    "enrollment_no": "0126AL241062",
+    "role": "Graphics Designer",
+    "team": "AIML_MEDIA",
+    "email": "arifzaidi072@gmail.com",
+    "contact": "8226042706",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Rajeev Kumar",
+    "enrollment_no": "0126AL241093",
+    "role": "Media Member",
+    "team": "AIML_MEDIA",
+    "email": "raj1807600@gmail.com",
+    "contact": "9798512385",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Aditya Rajput",
+    "enrollment_no": "0126AL241004",
+    "role": "Media Member",
+    "team": "AIML_MEDIA",
+    "email": "adityacreative64@gmail.com",
+    "contact": "9006984884",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Prince Khatik",
+    "enrollment_no": "0126AL251047",
+    "role": "Media Member",
+    "team": "AIML_MEDIA",
+    "email": "princekhatik7612@gmail.com",
+    "contact": "6269399193",
+    "type": "student",
+    "active": true
+  },
+  {
+    "name": "Teena Nandanwar",
+    "enrollment_no": "0126CS251346",
+    "role": "Media Member",
+    "team": "AIML_MEDIA",
+    "email": "nandanwarteena@gmail.com",
+    "contact": "9993016677",
+    "type": "student",
+    "active": true
+  }
+]
