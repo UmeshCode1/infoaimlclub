@@ -1,3 +1,5 @@
+import AppwritePing from "@/components/AppwritePing";
+
 export const metadata = {
   title: "info.aimlclub.tech | Governance Platform",
   description: "Official digital information & governance platform of AI & Machine Learning Club – Oriental College of Technology",
@@ -16,6 +18,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-[#050505] font-sans text-stone-300 selection:bg-pink-500/30 selection:text-pink-200 antialiased">
+        <AppwritePing />
         {children}
       </body>
     </html>
