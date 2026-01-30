@@ -42,12 +42,12 @@ export default function PageContent({ links, announcement, activeEvent, resource
 
                 <div className="mb-20">
                     <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-white mb-4 leading-none lowercase">
-                        Connect<br />
-                        <span className="text-pink-600">Ecosystem.</span>
+                        High-Performance<br />
+                        <span className="text-pink-600">Gateway.</span>
                     </h2>
                     <p className="text-[#888] text-base md:text-lg max-w-xl leading-relaxed">
-                        The high-performance gateway for official links & resources.
-                        Providing direct authorization to the AIML Club digital matrix.
+                        The official portal for links, resources, and live event updates.
+                        Providing direct authorization to the <strong>AI & Machine Learning Club</strong> activities and ecosystem.
                     </p>
                 </div>
 
@@ -107,8 +107,11 @@ export default function PageContent({ links, announcement, activeEvent, resource
                 <div className="mt-40 pt-16 border-t border-[#1a1a1a]">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left opacity-30">
                         <div>
-                            <span className="text-[10px] font-black text-[#444] uppercase tracking-[0.2em] block mb-2">Core Network</span>
-                            <span className="text-[10px] font-bold tracking-tight text-[#888]">SYSOPS: ONLINE</span>
+                            <span className="text-[10px] font-black text-[#444] uppercase tracking-[0.2em] block mb-2 underline decoration-pink-500/30">Core Network</span>
+                            <div className="flex items-center gap-2 justify-center md:justify-start font-mono">
+                                <div className="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.5)] animate-pulse" />
+                                <span className="text-[10px] font-bold tracking-tight text-[#888]">SYSOPS: ONLINE</span>
+                            </div>
                         </div>
                         <div>
                             <span className="text-[10px] font-black text-[#444] uppercase tracking-[0.2em] block mb-2">Protocol Build</span>
