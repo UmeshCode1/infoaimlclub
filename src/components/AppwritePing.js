@@ -8,9 +8,9 @@ export default function AppwritePing() {
         const verifyConnection = async () => {
             try {
                 await client.ping();
-                console.log("Appwrite connection verified (Ping successful)");
+                console.log("%c INFO %c Appwrite Gateway Verified.", "background: #ec4899; color: white; border-radius: 3px; font-weight: bold;", "color: #888;");
             } catch (error) {
-                console.error("Appwrite connection failed:", error);
+                console.error("Appwrite check failed:", error.message);
             }
         };
         verifyConnection();

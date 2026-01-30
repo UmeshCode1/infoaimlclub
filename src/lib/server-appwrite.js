@@ -1,6 +1,6 @@
 import { Client, Databases, Query } from "node-appwrite";
 
-const createAdminClient = () => {
+export const createAdminClient = () => {
     const client = new Client()
         .setEndpoint("https://fra.cloud.appwrite.io/v1")
         .setProject("697bdf630039dcd6007e")
@@ -32,12 +32,14 @@ export async function getLinks() {
 export async function getAnnouncements() {
     try {
         const { databases } = createAdminClient();
+        const now = new Date().toISOString();
         const response = await databases.listDocuments(
             "main",
             "announcements",
             [
                 Query.equal("active", true),
-                Query.orderDesc("starts_at"),
+                Query.lessThanEqual("starts_at", now),
+                Query.greaterThanEqual("ends_at", now),
                 Query.limit(1)
             ]
         );
@@ -47,3 +49,44 @@ export async function getAnnouncements() {
         return null;
     }
 }
+
+export async function getActiveEvent() {
+    try {
+        const { databases } = createAdminClient();
+        const now = new Date().toISOString();
+        const response = await databases.listDocuments(
+            "main",
+            "events",
+            [
+                Query.equal("active", true),
+                Query.lessThanEqual("starts_at", now),
+                Query.greaterThanEqual("ends_at", now),
+                Query.limit(1)
+            ]
+        );
+        return response.documents[0] || null;
+    } catch (error) {
+        console.error("Error fetching active event:", error);
+        return null;
+    }
+}
+
+export async function getResources() {
+    try {
+        const { databases } = createAdminClient();
+        const response = await databases.listDocuments(
+            "main",
+            "resources",
+            [
+                Query.equal("active", true),
+                Query.equal("visibility", "public"),
+                Query.limit(10)
+            ]
+        );
+        return response.documents;
+    } catch (error) {
+        console.error("Error fetching resources:", error);
+        return [];
+    }
+}
+

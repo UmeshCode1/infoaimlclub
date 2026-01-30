@@ -59,6 +59,17 @@ async function setup() {
                 ]
             },
             {
+                id: COLL_EVENTS, name: 'Events',
+                permissions: [Permission.read(Role.any()), Permission.write(Role.team('AIML_ADMIN'))],
+                attributes: [
+                    { key: 'event_id', type: 'string', size: 50, required: true },
+                    { key: 'title', type: 'string', size: 255, required: true },
+                    { key: 'starts_at', type: 'datetime', required: true },
+                    { key: 'ends_at', type: 'datetime', required: true },
+                    { key: 'active', type: 'boolean', required: false, default: true }
+                ]
+            },
+            {
                 id: COLL_ANNOUNCEMENTS, name: 'Announcements',
                 permissions: [Permission.read(Role.any()), Permission.write(Role.team('AIML_ADMIN'))],
                 attributes: [
@@ -67,13 +78,26 @@ async function setup() {
                     { key: 'ends_at', type: 'datetime', required: true },
                     { key: 'active', type: 'boolean', required: false, default: true }
                 ]
+            },
+            {
+                id: COLL_RESOURCES, name: 'Resources',
+                permissions: [Permission.read(Role.any()), Permission.write(Role.team('AIML_ADMIN'))],
+                attributes: [
+                    { key: 'title', type: 'string', size: 255, required: true },
+                    { key: 'type', type: 'string', size: 20, required: true }, // file | link
+                    { key: 'file_id', type: 'string', size: 100, required: false },
+                    { key: 'url', type: 'string', size: 1024, required: false },
+                    { key: 'visibility', type: 'string', size: 20, required: true }, // public | restricted
+                    { key: 'event_id', type: 'string', size: 100, required: false },
+                    { key: 'active', type: 'boolean', required: false, default: true }
+                ]
             }
         ];
 
         for (const col of collections) {
             try {
                 await databases.createCollection(DB_ID, col.id, col.name, col.permissions);
-                console.log(`✅ Collection: ${col.name}`);
+                console.log(`✅ Collection Created: ${col.name}`);
             } catch (e) {
                 if (e.code === 409) console.log(`ℹ️ Collection exists: ${col.name}`);
                 else throw e;

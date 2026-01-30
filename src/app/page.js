@@ -1,11 +1,22 @@
-import { getLinks, getAnnouncements } from "@/lib/server-appwrite";
+import { getLinks, getAnnouncements, getActiveEvent, getResources } from "@/lib/server-appwrite";
 import PageContent from "@/components/PageContent";
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
-    const links = await getLinks();
-    const announcement = await getAnnouncements();
+    const [links, announcement, event, resources] = await Promise.all([
+        getLinks(),
+        getAnnouncements(),
+        getActiveEvent(),
+        getResources()
+    ]);
 
-    return <PageContent links={links} announcement={announcement} />;
+    return (
+        <PageContent
+            links={links}
+            announcement={announcement}
+            activeEvent={event}
+            resources={resources}
+        />
+    );
 }
