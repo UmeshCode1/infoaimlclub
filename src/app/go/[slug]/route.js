@@ -1,30 +1,29 @@
-import { redirect } from 'next/navigation';
+import { redirect } from "next/navigation";
+import { createAdminClient } from "@/lib/server-appwrite"; // We need to export this or recreate it, let's use the Query approach
 import { Client, Databases, Query } from "node-appwrite";
 
-export const dynamic = 'force-dynamic';
+const createClient = () => {
+    const client = new Client()
+        .setEndpoint("https://fra.cloud.appwrite.io/v1")
+        .setProject("697bdf630039dcd6007e")
+        .setKey(process.env.APPWRITE_API_KEY);
+
+    return {
+        get databases() {
+            return new Databases(client);
+        },
+    };
+};
 
 export async function GET(request, { params }) {
     const slug = (await params).slug;
 
-    if (!slug) {
-        return redirect('/');
-    }
-
     try {
-        const client = new Client()
-            .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT)
-            .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID)
-            .setKey(process.env.APPWRITE_API_KEY);
-
-        const databases = new Databases(client);
-
+        const { databases } = createClient();
         const response = await databases.listDocuments(
             "main",
             "community_links",
-            [
-                Query.equal("key", slug),
-                Query.limit(1)
-            ]
+            [Query.equal("key", slug), Query.limit(1)]
         );
 
         if (response.documents.length > 0) {
@@ -32,12 +31,10 @@ export async function GET(request, { params }) {
             return redirect(targetUrl);
         }
 
-        // Fallback if not found
-        console.warn(`Redirect key not found: ${slug}`);
+        // Fallback to homepage if not found
         return redirect('/');
-
     } catch (error) {
-        console.error("Redirect error:", error);
+        console.error("Redirect Error:", error);
         return redirect('/');
     }
 }

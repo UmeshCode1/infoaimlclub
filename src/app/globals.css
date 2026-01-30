@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #050505;
+    --foreground: #e7e5e4;
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+@layer utilities {
+    .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .text-glow {
+        text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+    }
+}

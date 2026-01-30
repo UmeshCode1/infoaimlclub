@@ -24,6 +24,7 @@ export async function getLinks() {
         return response.documents;
     } catch (error) {
         console.error("Error fetching links:", error);
+        // Return empty array instead of crashing
         return [];
     }
 }
