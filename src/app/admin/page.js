@@ -192,10 +192,14 @@ export default function AdminDashboard() {
                             <form onSubmit={handleAdd} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {activeTab === 'members' && (
                                     <>
-                                        <input type="text" placeholder="Full Name" required onChange={e => setFormData({ ...formData, name: e.target.value })} className="bg-black border border-[#222] p-4 rounded-xl text-sm" />
+                                        <input type="text" placeholder="Full Name" required onChange={e => setFormData({ ...formData, name: e.target.value })} className="bg-black border border-[#222] p-4 rounded-xl text-sm md:col-span-2" />
+
+                                        <input type="text" placeholder="Enrollment No. (Optional)" onChange={e => setFormData({ ...formData, enrollment_no: e.target.value })} className="bg-black border border-[#222] p-4 rounded-xl text-sm" />
+                                        <input type="text" placeholder="Contact No. (Optional)" onChange={e => setFormData({ ...formData, contact: e.target.value })} className="bg-black border border-[#222] p-4 rounded-xl text-sm" />
+
                                         <input type="email" placeholder="Email Address" required onChange={e => setFormData({ ...formData, email: e.target.value })} className="bg-black border border-[#222] p-4 rounded-xl text-sm" />
                                         <input type="text" placeholder="Official Role" required onChange={e => setFormData({ ...formData, role: e.target.value })} className="bg-black border border-[#222] p-4 rounded-xl text-sm" />
-                                        <select required onChange={e => setFormData({ ...formData, team: e.target.value })} className="bg-black border border-[#222] p-4 rounded-xl text-sm capitalize">
+                                        <select required onChange={e => setFormData({ ...formData, team: e.target.value })} className="bg-black border border-[#222] p-4 rounded-xl text-sm capitalize md:col-span-2">
                                             <option value="">Select Team</option>
                                             {TEAMS.map(t => <option key={t} value={t}>{t}</option>)}
                                         </select>

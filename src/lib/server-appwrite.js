@@ -90,3 +90,21 @@ export async function getResources() {
     }
 }
 
+export async function getMembers() {
+    try {
+        const { databases } = createAdminClient();
+        const response = await databases.listDocuments(
+            "main",
+            "members",
+            [
+                Query.equal("active", true),
+                Query.limit(100)
+            ]
+        );
+        return response.documents;
+    } catch (error) {
+        console.error("Error fetching members:", error);
+        return [];
+    }
+}
+
