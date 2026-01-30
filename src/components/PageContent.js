@@ -16,9 +16,9 @@ export default function PageContent({ links, announcement, activeEvent, resource
     const categories = ["core", "community", "event", "resources", "subbrand"];
 
     return (
-        <div className="w-full flex flex-col min-h-screen">
+        <div className="w-full flex flex-col min-h-screen bg-[#000000] text-[#ededed]">
             {/* Header - Refactored for Precision */}
-            <header className="nav-blur">
+            <header className="sticky top-0 z-[100] w-full border-b border-[#333333] bg-black/50 backdrop-blur-md">
                 <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
                     <div className="flex items-center gap-4">
                         <div className="flex items-center gap-2">
